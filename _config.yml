@@ -1,11 +1,12 @@
 ### GENERAL SETTINGS ###
 
 # Site settings
-title: SOLID.
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-analytics: UA-50546869-2
-baseurl: "/solid-jekyll" #important: start with /
-url: "http://st4ple.github.io"
+
+title: JWolffStudios
+description: "Jeremy Wolff (@jwolffstudios) is a contemporary, pop, street artist from New York City, with a focus in current events, pop culture, sports, and music. Since taking on art full time in 2014, Wolff has been featured at multiple charity events, met a number of professional athletes that have signed his work, and has done live paintings. With a background in Mass Communications and Art, Wolff aims to gain a following, present at galleries, have murals on walls all over the world, and gain notoriety for his work. Wolff blends various styles to create a unique look that is beginning to transform into his own. Taking traditional oil painting portraits and mixing it with his often spray paint background and drip style painting, he blends a more modern look with a street/pop art feel. "
+analytics: #Google analytics code in the format XX-nnnnnnnn-n
+baseurl: "" #important: start with /
+url: "http://yourdomain.com"
 
 # Build settings
 markdown: kramdown
@@ -13,96 +14,75 @@ permalink: /:categories/:title
 excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
 
 colors:  #in hex code if not noted else
-  primary: "#00b3fe" #"#F70031" 
-  primary_rgb: "0,179,254" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.  
+  primary: "#00b3fe" #"#F70031"
+  primary_rgb: "0,179,254" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.
   secondary: "#384452" #"#33004D"
   link: "#428bca"
   link_hover: "#01b2fe"
   footer_heading: "#ffffff"
   footer_content: "#bfc9d3"
-  
-  
+
+# Making projects separate from posts
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+  questions:
+    output: true
+    permalink: /questions/:title/
+
 ### CONTACT SETTINGS ###
 
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
 social:
-  - title: dribbble
-    url:
   - title: facebook
-    url:
+    url: https://www.facebook.com/jwolffstudios/
   - title: twitter
-    url: 
+    url: https://twitter.com/jwolffstudios
   - title: instagram
-    url: 
-  - title: tumblr
-    url: 
-    
+    url: https://www.instagram.com/jwolffstudios/
+
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:
-  - lines: 
-    - Some Ave, 987,
-    - 23890, New York,
-    - United States.
-email: hello@solidtheme.com
-tel: +34 8493-4893
+  - lines:
+    - New York City
+    - United States
+email: JWolff@jwolffstudios.com
+
 
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
-    
+
 # Members information. Shown on About page.
 members:
-  - name: Mark Webber
-    position: CEO
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  - name: Jeremy Wolff
+    position: Artist
+    text: add text here ....
     img: team01.jpg
     social:
+      - title: instagram
+        url: https://www.instagram.com/jwolffstudios/
+      - title: twitter
+        url: http://twitter.com/jwolffstudios
+      - title: facebook
+        url: https://www.facebook.com/jwolffstudios/
       - title: envelope #use for email address
         url: mailto:name@domain.com
-      - title: twitter
-        url: http://twitter.com/handle
-  - name: Paul Jameson
-    position: Lead Designer
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: team02.jpg
-    social:
-      - title: envelope #use for email address
-        url: mailto:name@domain.com
-      - title: twitter
-        url: http://twitter.com/handle
-  - name: Laura Sommers
-    position: Lead Developer
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: team03.jpg
-    social:
-      - title: envelope #use for email address
-        url: mailto:name@domain.com
-      - title: twitter
-        url: http://twitter.com/handle
-  - name: Martin Blunt
-    position: Marketing
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    img: team04.jpg
-    social:
-      - title: envelope #use for email address
-        url: mailto:name@domain.com
-      - title: twitter
-        url: http://twitter.com/handle
-    
+
+
 # Clients information. Shown on Home and About pages.
 clients:
-  - name: dribbble
+  - name: Forbes Magazine
     img: client01.png
-  - name: Code is Poetry
+  - name: Four Hundred Media Group
     img: client02.png
-  - name: Vimeo
+  - name: GFTD
     img: client03.png
-  - name: VimeoPro
-    img: client04.png
-    
-# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
 
-# Testimonial content. Shown on Home and About page. 
+# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
+about: "Jeremy Wolff (@jwolffstudios) is a contemporary, pop, street artist from New York City, with a focus in current events, pop culture, sports, and music."
+
+# Testimonial content. Shown on Home and About page.
 testimonial:
     message: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
     author: Marcel Newman
